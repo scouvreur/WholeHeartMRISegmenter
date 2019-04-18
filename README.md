@@ -2,11 +2,9 @@
 
 This data is from the *HVSMR 2016: MICCAI Workshop on Whole-Heart and Great Vessel Segmentation from 3D Cardiovascular MRI in Congenital Heart Disease* [challenge](http://segchd.csail.mit.edu/data.html).
 
-This segmenting command-line tools is based on transfer learning from a  a Dense Vnet application in [NiftyNet](http://www.niftynet.io/) trained on CT data for abdominal organ segmentation.
+This segmenting command-line tools is based on transfer learning from a Dense VNet application in [NiftyNet](http://www.niftynet.io/) trained on CT data for abdominal organ segmentation.
 
 If you want to make any changes or improvements to the config file, you can use the [NiftyNet config docs](https://niftynet.readthedocs.io/en/dev/). You can also find the source code for NiftyNet on [GitHub](https://github.com/NifTK/NiftyNet) along with other sample config files to use.
-
-More details on the parameters in the [config file](https://niftynet.readthedocs.io/en/dev/config_spec.html#loss-type).
 
 ## Setup
 
@@ -22,11 +20,12 @@ Then, do:
 cd WholeHeartMRISegmenter/
 conda create -n niftynet-dev
 conda activate niftynet-dev
-conda install tensorflow-gpu==1.12 yaml
+conda install tensorflow-gpu==1.12
 pip install niftynet opencv-python scikit-image simpleitk pyyaml
 ```
 
 ## Data and Labels
+### Labels preview
 
 Label | Axial | Coronal | Sagittal | Comments
 :----:|:-----:|:-------:|:--------:|:--------:
@@ -34,9 +33,9 @@ n/a | ![](assets/a.png) | ![](assets/c.png) | ![](assets/s.png) |
 `A` | ![](assets/a_label_a.png) | ![](assets/c_label_a.png) | ![](assets/s_label_a.png) | `num_classes=3`
 `B` | ![](assets/a_label_b.png) | ![](assets/c_label_b.png) | ![](assets/s_label_b.png) | `num_classes=5`
 
-Explanation of the labels in ITKSnap:
+### Labels explanation in ITKSnap
 
-Label | 3D View | ITKSnap Labels | Anatomincal explanation
+Label | 3D View | ITKSnap Labels | Anatomical Explanation
 :----:|:-------:|:--------------:|:-----------------------
 `A` | ![](assets/label_a.png) | ![](assets/labels_a.png) | <ul><li>`Label 1`: Myocardium</li><li>`Label 2`: Blood Pool and Great Vessels</li></ul>
 `B` | ![](assets/label_b.png) | ![](assets/labels_b.png) | <ul><li>`Label 1`: Myocardium</li><li>`Label 2`: Blood Pool</li><li>`Label 64`: Aorta</li><li>`Label 71`: Pulmonary Arteries</li></ul>
