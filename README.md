@@ -4,6 +4,8 @@ This data is from the MICCAI 2016 [challenge](http://segchd.csail.mit.edu/data.h
 
 [NiftyNet Docs](https://niftynet.readthedocs.io/en/dev/)
 
+More details on the parameters in the [config file](https://niftynet.readthedocs.io/en/dev/config_spec.html#loss-type).
+
 ## Setup
 
 ```bash
@@ -15,12 +17,11 @@ pip install niftynet opencv-python scikit-image simpleitk pyyaml
 
 ## Data and labels
 
-<!-- | Raw | Pre-processed |
-:----:|:--------------:
-![0a0ec5a23](assets/0a0ec5a23.jpg) | ![0a0ec5a23](assets/0a0ec5a23_256.jpg)
-![0a810e2a1](assets/0a810e2a1.jpg) | ![0a810e2a1](assets/0a810e2a1_256.jpg)
-![0c2d0b8b8](assets/0c2d0b8b8.jpg) | ![0c2d0b8b8](assets/0c2d0b8b8_256.jpg)
- -->
+Label | Axial | Coronal | Sagittal | Comments
+:----:|:-----:|:-------:|:--------:|:--------:
+   | ![](assets/a.png) | ![](assets/c.png) | ![](assets/s.png) |
+`A` | ![](assets/a_label_a.png) | ![](assets/c_label_a.png) | ![](assets/s_label_a.png) | in config use `num_classes = 3`
+`B` | ![](assets/a_label_b.png) | ![](assets/c_label_b.png) | ![](assets/s_label_b.png) | in config use `num_classes = 5`
 
 ## Training
 
