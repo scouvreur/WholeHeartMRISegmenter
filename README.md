@@ -19,9 +19,11 @@ pip install niftynet opencv-python scikit-image simpleitk pyyaml
 
 Label | Axial | Coronal | Sagittal | Comments
 :----:|:-----:|:-------:|:--------:|:--------:
-   | ![](assets/a.png) | ![](assets/c.png) | ![](assets/s.png) |
-`A` | ![](assets/a_label_a.png) | ![](assets/c_label_a.png) | ![](assets/s_label_a.png) | in config use `num_classes = 3`
-`B` | ![](assets/a_label_b.png) | ![](assets/c_label_b.png) | ![](assets/s_label_b.png) | in config use `num_classes = 5`
+n/a | ![](assets/a.png) | ![](assets/c.png) | ![](assets/s.png) |
+`A` | ![](assets/a_label_a.png) | ![](assets/c_label_a.png) | ![](assets/s_label_a.png) | `num_classes=3`
+`B` | ![](assets/a_label_b.png) | ![](assets/c_label_b.png) | ![](assets/s_label_b.png) | `num_classes=5`
+
+
 
 ## Training
 
