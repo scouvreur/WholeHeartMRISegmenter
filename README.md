@@ -1,14 +1,25 @@
 # Whole Heart MRI Segmenter
 
-This data is from the MICCAI 2016 [challenge](http://segchd.csail.mit.edu/data.html) HVSMR 2016: MICCAI Workshop on Whole-Heart and Great Vessel Segmentation from 3D Cardiovascular MRI in Congenital Heart Disease.
+This data is from the *HVSMR 2016: MICCAI Workshop on Whole-Heart and Great Vessel Segmentation from 3D Cardiovascular MRI in Congenital Heart Disease* [challenge](http://segchd.csail.mit.edu/data.html).
 
-[NiftyNet Docs](https://niftynet.readthedocs.io/en/dev/)
+This segmenting command-line tools is based on transfer learning from a  a Dense Vnet application in [NiftyNet](http://www.niftynet.io/) trained on CT data for abdominal organ segmentation.
+
+If you want to make any changes or improvements to the config file, you can use the [NiftyNet config docs](https://niftynet.readthedocs.io/en/dev/). You can also find the source code for NiftyNet on [GitHub](https://github.com/NifTK/NiftyNet) along with other sample config files to use.
 
 More details on the parameters in the [config file](https://niftynet.readthedocs.io/en/dev/config_spec.html#loss-type).
 
 ## Setup
 
+First, clone this repo using:
+
 ```bash
+git clone https://github.com/scouvreur/WholeHeartMRISegmenter.git
+```
+
+Then, do:
+
+```bash
+cd WholeHeartMRISegmenter/
 conda create -n niftynet-dev
 conda activate niftynet-dev
 conda install tensorflow-gpu==1.12 yaml
@@ -27,8 +38,8 @@ Explanation of the labels in ITKSnap:
 
 Label | 3D View | ITKSnap Labels | Anatomincal explanation
 :----:|:-------:|:--------------:|:-----------------------
-`A` | ![](assets/label_a.png) | ![](assets/labels_a.png) | <ul><li>`Label 1`: Myocardium</li><li>`Label 2`: Blood Pool</li></ul>
-`B` | ![](assets/label_b.png) | ![](assets/labels_b.png) | <ul><li>`Label 1`: Myocardium</li><li>`Label 2`: Blood Pool</li></ul>
+`A` | ![](assets/label_a.png) | ![](assets/labels_a.png) | <ul><li>`Label 1`: Myocardium</li><li>`Label 2`: Blood Pool and Great Vessels</li></ul>
+`B` | ![](assets/label_b.png) | ![](assets/labels_b.png) | <ul><li>`Label 1`: Myocardium</li><li>`Label 2`: Blood Pool</li><li>`Label 64`: Aorta</li><li>`Label 71`: Pulmonary Arteries</li></ul>
 
 ## Training
 
