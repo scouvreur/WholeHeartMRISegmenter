@@ -10,7 +10,7 @@ This data is from the MICCAI 2016 [challenge](http://segchd.csail.mit.edu/data.h
 conda create -n niftynet-dev
 conda activate niftynet-dev
 conda install tensorflow-gpu==1.12 yaml
-pip install niftynet opencv-python scikit-image simpleitk
+pip install niftynet opencv-python scikit-image simpleitk pyyaml
 ```
 
 
