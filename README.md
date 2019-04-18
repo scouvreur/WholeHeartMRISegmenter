@@ -4,7 +4,7 @@ This data is from the *HVSMR 2016: MICCAI Workshop on Whole-Heart and Great Vess
 
 This segmenting command-line tools is based on transfer learning from a Dense VNet application in [NiftyNet](http://www.niftynet.io/) trained on CT data for abdominal organ segmentation.
 
-If you want to make any changes or improvements to the config file, you can use the [NiftyNet config docs](https://niftynet.readthedocs.io/en/dev/). You can also find the source code for NiftyNet on [GitHub](https://github.com/NifTK/NiftyNet) along with other sample config files to use.
+If you want to make any changes or improvements to the config file, you can use the NiftyNet [config file docs](https://niftynet.readthedocs.io/en/dev/config_spec.html), or the [complete docs](https://niftynet.readthedocs.io/en/dev/). You can also find the source code for NiftyNet on [GitHub](https://github.com/NifTK/NiftyNet) along with other sample config files to use.
 
 ## Setup
 
