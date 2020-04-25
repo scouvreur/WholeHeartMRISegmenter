@@ -29,7 +29,7 @@ Then, do:
 
 Label | Axial                     | Coronal                   | Sagittal                  | Classes
 :----:|:-------------------------:|:-------------------------:|:-------------------------:|:---------------:
-      | ![](assets/a.png)         | ![](assets/c.png)         | ![](assets/s.png)         | `num_classes=1`
+`n/a` | ![](assets/a.png)         | ![](assets/c.png)         | ![](assets/s.png)         | `num_classes=1`
 `A`   | ![](assets/a_label_a.png) | ![](assets/c_label_a.png) | ![](assets/s_label_a.png) | `num_classes=3`
 `B`   | ![](assets/a_label_b.png) | ![](assets/c_label_b.png) | ![](assets/s_label_b.png) | `num_classes=5`
 
